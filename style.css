@@ -72,7 +72,9 @@ body {
   width: 210px;
   height: 210px;
   border-radius: 50%;
-  background-color: #000;
+    background-image: url('КОТ С КЛУБНИКОЙ.jpg'); /* для обычного черного круга: background-color: *черный* */
+  background-size: cover;
+  background-position: center;
   flex-shrink: 0;
 }
 
