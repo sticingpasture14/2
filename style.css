@@ -69,15 +69,14 @@ body {
 }
 
 .hero__circle {
-  width: 210px;
-  height: 210px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-    background-image: url('КОТ С КЛУБНИКОЙ.jpg'); /* для обычного черного круга: background-color: *черный* */
+  background-image: url('КОТ С КЛУБНИКОЙ.jpg'); /* для чёрного круга: background-color: #000 */
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
 }
-
 .middle {
   display: flex;
   gap: 40px;
@@ -85,10 +84,17 @@ body {
 }
 
 .middle__col {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.middle__col:first-child {
+  flex: 3;
+}
+
+.middle__col:last-child {
+  flex: 2;
 }
 
 .feature {
@@ -118,6 +124,7 @@ body {
   line-height: 1.4;
   text-align: justify;
 }
+
 .mini {
   display: flex;
   gap: 15px;
@@ -143,5 +150,147 @@ body {
 .mini__text {
   font-size: 11px;
   line-height: 1.4;
+  text-align: left;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bottom__col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottom__col:first-child {
+  flex: 8;
+}
+
+.bottom__col:last-child {
+  flex: 4;
+}
+
+.bottom__hero {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.bottom__hero-body {
+  flex: 1;
+}
+
+.bottom__title {
+  font-size: 18px;
+}
+
+.bottom__text {
+  font-size: 12px;
+  line-height: 1.5;
   text-align: justify;
+}
+
+.bottom__circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #000;
+  flex-shrink: 0;
+}
+
+.bottom__circle--small {
+  width: 100px;
+  height: 100px;
+}
+
+.bottom__row {
+  display: flex;
+  gap: 15px;
+}
+
+.bottom__wide {
+  height: 60px;
+  background-color: #000;
+  flex: 1;
+}
+
+.bottom__wide--tall {
+  height: 90px;
+}
+
+.header--mini {
+  margin-bottom: 20px;
+}
+
+.header__right--solid {
+  gap: 0;
+}
+.header--mini .header__left {
+  flex: 1;
+}
+
+.header--mini .header__gap {
+  flex: 7;
+}
+
+.header--mini .header__right {
+  flex: 12;
+}
+.header--mini .header__right .header__bar {
+  flex: 1;
+  width: auto;
+}
+
+.duo {
+  display: flex;
+  gap: 30px;
+}
+
+.duo__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.duo .mini__image {
+  width: 30px;
+  height: 30px;
+}
+
+.bottom__circle--center {
+  align-self: center;
+}
+
+.header-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.header-stack .header__left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-stack .header__right {
+  display: flex;
+  gap: 8px;
+}
+
+.header-stack .header__right .header__bar {
+  flex: 1;
+  width: auto;
+}
+
+.bottom__wide--full {
+  width: 100%;
+  flex: none;
+}
+
+.bottom__spacer {
+  flex: 1;
 }
